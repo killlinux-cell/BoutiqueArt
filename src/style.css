@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+@import './assets/navbar.css';
+@import './assets/hero.css';
+@import './assets/service.css';
+@import './assets/produit.css';
+@import './assets/contact.css';
+@import './assets/footer.css';
+
+
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}

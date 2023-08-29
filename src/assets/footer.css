@@ -42,3 +42,18 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+
+@media screen and (max-width: 925px) {
+    .footer-social{
+        display: none;
+    }
+
+    .footer-links{
+        display: none;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+}

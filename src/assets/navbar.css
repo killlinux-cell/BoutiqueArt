@@ -1,25 +1,17 @@
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: none; 
-    padding: 20px;
+	-webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    padding: 10px;
     position: fixed;
     width: 100%;
     z-index: 1000; 
 }
 
-nav {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     font-size: 24px;
     font-weight: bold;
-    margin-right: 50rem;
-    color: #fff;
+    color: #000;
 }
 
 .nav-links {
@@ -40,4 +32,116 @@ nav {
 
 .nav-links a:hover {
     color: #C08261; 
+}
+
+.nav-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+/* HAMBURGER MENU */
+.hamburger-menu-container {
+	position: relative;
+	display: none;
+}
+
+.hamburger-menu {
+	position: relative;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	transition: transform 300ms ease-in-out;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after {
+	content: "";
+	background-color: var(--default-color);
+	transition: transform 300ms ease-in-out;
+}
+
+.hamburger-menu::before {
+	position: absolute;
+	top: -7px;
+}
+
+.hamburger-menu::after {
+	position: absolute;
+	top: 7px;
+}
+
+.close {
+	height: 0;
+}
+
+.close::before {
+	transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.close::after {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* RESPONSIVENESS */
+.nav-mobile {
+	background-color: #ffffff;
+	z-index: 998;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	transition: 0.2s;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+}
+
+.mobile-element {
+	font-size: 2.25em;
+	font-weight: 500;
+	transition: 0.2s;
+	margin: 40px;
+}
+
+.mobile-element:hover {
+	color: var(--default-color);
+}
+
+.position-relative{
+	position: relative;
+}
+
+.close-mobile-menu{
+	position: absolute;
+	color: #000;
+	top: 0;
+	right: 0;
+	padding: 10px;
+}
+
+
+
+/* Styles pour afficher le menu sur mobile */
+@media screen and (max-width: 925px) {
+    .nav-container {
+		width: 100%;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+	.hamburger-menu-container {
+		display: block;
+	}
+    
+    .nav-links{
+        display: none;
+    }
+
+    .logo{
+        display: block;
+    }
 }

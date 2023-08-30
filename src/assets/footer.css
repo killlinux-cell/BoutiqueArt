@@ -46,14 +46,14 @@ footer {
 
 @media screen and (max-width: 925px) {
     .footer-social{
-        display: none;
+        display: inline;
     }
 
     .footer-links{
-        display: none;
+        display: block;
     }
 
     .footer-logo{
-        display: none;
+        display: inline;
     }
 }

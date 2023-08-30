@@ -47,13 +47,15 @@ footer {
 @media screen and (max-width: 925px) {
     .footer-social{
         display: inline;
+        font-size: 0.2rem;
     }
 
     .footer-links{
-        display: block;
+        display: none;
     }
 
     .footer-logo{
         display: inline;
+        padding-left: 0.5rem;
     }
 }

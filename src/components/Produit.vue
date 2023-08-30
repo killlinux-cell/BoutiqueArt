@@ -1,5 +1,9 @@
 <template>
+
+    <h2 class="nosCrea">Nos créations</h2>
+
     <section class="products" id="produit">
+        
     <div class="product">
         <img src="../assets/img-1.jpg" alt="Produit 1">
         <h3>Art Murale</h3>

@@ -1,4 +1,4 @@
-.services {
+/* .services {
     background-color: #f9f9f9;
     padding: 60px 0;
     display: flex;
@@ -26,7 +26,28 @@
     font-size: 16px;
     color: #666;
 }
+ */
 
+        .art-section {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 5rem;
+            margin-bottom   : 5rem;
+        }
+
+        .art-section-header {
+            color: #333;
+            padding-bottom: 2rem;
+            font-family: var(--secondary-font);
+            font-size: 5rem;
+        }
+
+        .art-section-desc {
+            color: #555;
+            font-size: 1.2rem;
+            font-family: var(--third-font);
+        }
 
 @media screen and (max-width: 925px) {
     .services {

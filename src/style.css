@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 @import './assets/navbar.css';
 @import './assets/hero.css';
@@ -6,6 +8,12 @@
 @import './assets/produit.css';
 @import './assets/contact.css';
 @import './assets/footer.css';
+
+:root{
+    --secondary-font: 'Qwitcher Grypen', cursive;
+    --third-font: 'Raleway', sans-serif;
+
+}
 
 
 /* Réinitialisation des styles par défaut */
